@@ -144,6 +144,10 @@ public class GUI extends JFrame {
                 this.image = new ImageIcon(getClass().getResource("/Resource/me.jpg"));
                 imageLabel.setIcon(image);
             }
+            else if(e.getClickCount() == 1){
+                this.image = new ImageIcon(getClass().getResource("/Resource/leer.jpg"));
+                imageLabel.setIcon(image);
+            }
         }
 
         @Override
@@ -168,10 +172,8 @@ public class GUI extends JFrame {
 
         @Override
         public void mouseDragged(MouseEvent e) {
-            imageLabel.setIcon(null);
-            panelActions.remove(expectativeText);
-            this.image = new ImageIcon(getClass().getResource("/Resource/leer.jpg"));
-            imageLabel.setIcon(image);
+
+
         }
 
         @Override
@@ -193,7 +195,7 @@ public class GUI extends JFrame {
 
             }
             else if(e.getSource()== myHobby){
-                JOptionPane.showMessageDialog(null,"hint: drag me without fear and you will see what I like to do");
+                JOptionPane.showMessageDialog(null,"hint: Just once and you'll know that I like it");
             }
             else if(e.getSource()== myExpectation){
                 JOptionPane.showMessageDialog(null,"hint: Mi MaMá Me aMa");
