@@ -15,7 +15,7 @@ public class GUI extends JFrame {
 
     private Header headerProject;
     private JPanel panelActions, containerButtons;
-    private JTextArea expectativeText, hintText;
+    private JTextArea expectativeText;
     private JButton myPhoto, myHobby, myExpectation;
     private Listener listener;
     private JLabel imageLabel;
